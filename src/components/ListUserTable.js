@@ -6,13 +6,9 @@ export const ListUserTable = () => {
     const dispatch = useDispatch();
     const { loading, data } = useSelector((state) => state.getUserData)
 
-
-
     useEffect(() => {
         dispatch(getUsers())
     }, [dispatch])
-
-
 
     return (
         <>
